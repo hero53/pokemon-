@@ -1,0 +1,23 @@
+ 
+ .responsive-card {
+      width: 80%;
+      max-width: 900px;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .responsive-card {
+        width: 90%;
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .responsive-card {
+        width: 95%;
+        padding: 1rem;
+      }
+    }

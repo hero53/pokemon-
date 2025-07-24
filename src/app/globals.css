@@ -40,3 +40,12 @@ a {
     color-scheme: dark;
   }
 }
+
+#nprogress .bar {
+  background: #007bff; /* couleur Bootstrap primary */
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #007bff, 0 0 5px #007bff;
+}
