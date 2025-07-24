@@ -10,8 +10,6 @@ import clsx from "clsx";
 import React, { useState, useEffect } from "react";
 // import "./style.css";
 
-import HomeCard from "@/app/HomeComponents";
-
 export default function Pokemon() {
   const [pokemon, setPokemon] = useState([]); // Initialize as null for single Pokémon
   const [loading, setLoading] = useState(false); // Add loading state
@@ -40,7 +38,6 @@ export default function Pokemon() {
     findPokemon();
   }, []);
   const pokemonTypes = pokemon?.types;
-  // return <HomeCard pokemon={pokemon} />
   return (
     <div className="container py-2">
       <div className="p-4 mb-2 bg-body-tertiary rounded-3">
