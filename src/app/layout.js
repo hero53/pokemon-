@@ -4,6 +4,7 @@ import "./globals.css";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import TopLoader from "../components/TopLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,14 +25,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-success-subtle`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-success-subtle d-flex flex-column min-vh-100`}
       >
-        <>
-          <NavBar />
+        <NavBar />
+        <TopLoader />
+        <main className="flex-grow-1">
           {children}
-          <Footer />
-          
-        </>
+        </main>
+        <Footer />
       </body>
     </html>
   );

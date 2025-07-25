@@ -1,11 +1,10 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
 import HomeCard from "./HomeComponents";
 
-
 export default function Home() {
-   const [pokemons, setPokemons] = useState([]);
+  const [pokemons, setPokemons] = useState([]);
   const [offset, setOffset] = useState(0);
   const [loading, setLoading] = useState(false);
 
@@ -37,7 +36,8 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const nearBottom =
-        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 100;
 
       const hasMore = pokemons.length < maxTotal;
 
@@ -55,13 +55,40 @@ export default function Home() {
       <div className="album py-5 bg-success-subtle">
         <div className="container">
           <div className="row">
-            {pokemons.map((pokemon,index) => (
-              <div key={`${pokemon.pokedex_id} - ${index}`} className="col-md-3 mb-4">
+            {pokemons.map((pokemon, index) => (
+              <div
+                key={`${pokemon.pokedex_id} - ${index}`}
+                className="col-md-3 mb-4"
+              >
                 <HomeCard pokemon={pokemon} />
               </div>
             ))}
           </div>
-          {loading && <p>Chargement...</p>}
+          {loading && (
+            <div className="card" aria-hidden="true"  >
+              {/* <img
+                src="https://via.placeholder.com/286x180"
+                className="card-img-top"
+                alt="..."
+              /> */}
+              <div className="card-body mb-5">
+                <h5 className="card-title placeholder-glow">
+                  <span className="placeholder col-6"></span>
+                </h5>
+                <p className="card-text placeholder-glow">
+                  <span className="placeholder col-7"></span>
+                  <span className="placeholder col-4"></span>
+                  <span className="placeholder col-4"></span>
+                  <span className="placeholder col-6"></span>
+                  <span className="placeholder col-8"></span>
+                </p>
+                <a
+                  href="#"
+                  className="btn btn-primary disabled placeholder col-6"
+                ></a>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </main>

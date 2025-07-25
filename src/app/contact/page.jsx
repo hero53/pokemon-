@@ -1,7 +1,31 @@
+"use client";
+
+// import { useState } from 'react';
+import { showSuccess, showError } from '../../lib/alert';
+
 export default function Contact() {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    if (res.ok) {
+      showSuccess("Votre message a bien été envoyé !");
+    } else {
+      const error = await res.json();
+      showError(error.message || "Erreur inconnue");
+    }
+  };
   return (
     <>
-      <main className="container py-5 " >
+      <main className="container py-5 ">
         <div className="p-5 mb-4 bg-body-tertiary rounded-3">
           <div className="container-fluid py-5">
             <h1 className="display-5 fw-bold">Contactez-nous</h1>
@@ -17,7 +41,7 @@ export default function Contact() {
           <div className="col-md-6">
             <div className="h-100 p-5 text-bg-primary rounded-3">
               <h2>Formulaire de contact</h2>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">
                     Nom complet
@@ -73,7 +97,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        
       </main>
     </>
   );
