@@ -65,27 +65,230 @@ export default function Home() {
             ))}
           </div>
           {loading && (
-            <div className="card" aria-hidden="true"  >
-              {/* <img
-                src="https://via.placeholder.com/286x180"
-                className="card-img-top"
-                alt="..."
-              /> */}
-              <div className="card-body mb-5">
-                <h5 className="card-title placeholder-glow">
-                  <span className="placeholder col-6"></span>
-                </h5>
-                <p className="card-text placeholder-glow">
-                  <span className="placeholder col-7"></span>
-                  <span className="placeholder col-4"></span>
-                  <span className="placeholder col-4"></span>
-                  <span className="placeholder col-6"></span>
-                  <span className="placeholder col-8"></span>
-                </p>
-                <a
-                  href="#"
-                  className="btn btn-primary disabled placeholder col-6"
-                ></a>
+            <div className="row">
+              <div className="col-md-3 mb-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="card " aria-hidden="true">
+                  {/* Placeholder image using Bootstrap classes */}
+                  <div className="card-img-top placeholder-glow">
+                    <span
+                      className="placeholder col-12"
+                      style={{ height: "180px", display: "block" }}
+                    ></span>
+                  </div>
+
+                  <div className="card-body mb-5">
+                    <h5 className="card-title placeholder-glow">
+                      <span className="placeholder col-6"></span>
+                    </h5>
+                    <p className="card-text placeholder-glow">
+                      <span className="placeholder col-7"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-4"></span>
+                      <span className="placeholder col-6"></span>
+                      <span className="placeholder col-8"></span>
+                    </p>
+                    <a
+                      href="#"
+                      className="btn btn-primary disabled placeholder col-6"
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           )}
