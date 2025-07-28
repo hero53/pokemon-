@@ -8,8 +8,6 @@ import fallbackImage from "../../../../public/asset/pokemon/regular.png";
 import React, { useState, useEffect } from "react";
 // import "./style.css";
 
-import HomeCard from "@/app/HomeComponents";
-
 export default function CreatePokemon() {
   return (
     <div className="container py-2">
